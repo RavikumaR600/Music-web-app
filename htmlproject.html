@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Store</title>
+	<link rel="stylesheet" type="text/css" href="htmlproject.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body id="mypage">
+	<!-------Nevbar Starts Here-------->
+	<div class="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Playlist</a></li>
+		<li><a href="#">Discover</a></li>
+		<li><a href="login\loginindex.html">Login/Signup</a></li>
+		<li><a href="Developer\developer.html">Developer</a></li>
+		<li><a href="contactus\contactus.html">Contact Us</a></li>
+	</ul> 
+	</div>
+	<!-------SearchBar Starts Here-------->
+	<div class="search_box">
+	<input class="input_box" type="text" name="" placeholder="Search">
+ 		<a class="btn" href="#">
+ 			<i class="fas fa-search"></i>
+ 		</a>
+	</div>
+	<!-------SearchBar Ends Here-------->
+	<!---------Nevbar Ends Here--------->
+	<!-------Content Starts Here-------->
+<div id="maincontent">
+	<div class="content">
+		<!-------Image Slider Starts Here-------->
+		<h3 class="heading1">RECENTLY PLAYED</h3>
+		<div id="container1">
+			<img class="slides" src="sliderimage/slide1.jpg"/>
+			<img class="slides" src="sliderimage/slide2.jpg"/>
+			<img class="slides" src="sliderimage/slide3.jpg"/>
+			<img class="slides" src="sliderimage/slide4.jpg"/>
+			<img class="slides" src="sliderimage/slide5.jpg"/>
+			<img class="slides" src="sliderimage/slide6.jpg"/>
+			<img class="slides" src="sliderimage/slide7.jpg"/>
+			<button class="btnsl" onclick="plusIndex(-1)" id="btn1" >&#10094;</button>
+			<button class="btnsl" onclick="plusIndex(1)" id="btn2" >&#10095;</button>
+		</div>
+		<!-------Image Slider Ends Here-------->
+
+		<!-------Playlist Slider Starts Here-------->
+		<div class="Playlist">
+			<h3 class="heading1">PLAYLIST</h3>
+			<ul class="songinplay">
+				<li> <button class="songinlist" value="PLAY"  onclick="play1()" > <audio id="audio1" src="music/cocacolatu.mp3" ></audio> Coca Cola : Luka Chuppi Tony Kakkar, Neha Kakkar </button></li>
+
+				<li><button class="songinlist" value="PLAY"  onclick="play2()" > <audio id="audio2" src="music/wedonttalkanymore.mp3" ></audio> We dont talk anymore : Charlie Puth feat. Selena Gomez  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play3()" > <audio id="audio3" src="music/letmeloveyou.mp3" > </audio> Let Me Love you : DJ Snake  </button></li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play4()" > <audio id="audio4" src="music/cheapthrills.mp3" ></audio> Cheap Thrills : Sia  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play5()" > <audio id="audio5" src="music/allweknow.mp3" > </audio>All We Know : Chainsmokers  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play6()" > <audio id="audio6" src="music/coldwater.mp3" > </audio>Cold Water : Major Lazer  feat. Justin Bieber & MØ  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play7()" ><audio id="audio7" src="music/closer.mp3" > </audio>Closer : Chainsmokers  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play8()" > <audio id="audio8" src="music/apnatimeaayega.mp3" ></audio>Apna Time Aayega : Gully Boy ,Ranveer Singh, Alia Bhatt  </button> </li>
+
+				<li><button class="songinlist" value="PLAY"  onclick="play9()" ><audio id="audio9" src="music/sanukehndi.mp3" ></audio>Sanu Kehndi Kesari : Romy and Brijesh Shandilya  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play10()" > <audio id="audio10" src="music/godsplan.mp3" ></audio>GOD'S PLAN : DRAKE  </button> </li>
+
+				<li> <button class="songinlist" value="PLAY"  onclick="play11()" > <audio id="audio11" src="music/onekiss.mp3" ></audio>ONE KISS : CALVIN HARRIS & DUA LIPA </button></li>
+			</div>	
+			</ul>
+		</div>
+		<!-------Playlist Slider Ends Here-------->
+	</div>
+	<!-------Content Ends Here-------->
+
+	<!-------Trending section Here-------->
+	<div class="trending">
+		<div class="trendingsong">
+			<h3 class="heading1">ENGLISH TOP 20 2019</h3>
+			<ul class="trendinglist">
+				<li id="englishsonginfo1" class="songinfo" > <img src="trendingbg/godsplan.jpg"> GOD'S PLAN : DRAKE</li>
+
+				<li id="englishsonginfo2" class="songinfo"> <img src="trendingbg/ONEKISS.jpg"> ONE KISS : CALVIN HARRIS & DUA LIPA</li>
+
+				<li id="englishsonginfo3" class="songinfo"> <img src="trendingbg/SHOTGUN.jpg"> SHOTGUN : GEORGE EZRA </li>
+
+				<li id="englishsonginfo4" class="songinfo"> <img src="trendingbg/THESEDAYS.jpg"> THESE DAYS : RUDIMENTAL GLYNNE MACKLEMORE</li>
+
+				<li id="englishsonginfo5" class="songinfo"> <img src="trendingbg/THISISME.jpg"> THIS IS ME : SETTLE GREATEST SHOWMAN</li>
+
+				<li id="englishsonginfo6" class="songinfo"> <img src="trendingbg/NICEFORWHAT.jpg"> NICE FOR WHAT : DRAKE</li>
+
+				<li id="englishsonginfo7" class="songinfo"> <img src="trendingbg/PERFECT.jpg"> PERFECT : ED SHEERAN </li>
+
+				<li id="englishsonginfo8" class="songinfo"> <img src="trendingbg/PARADISE.jpg"> PARADISE : GEORGE EZRA</li>
+
+				<li id="englishsonginfo9" class="songinfo"> <img src="trendingbg/IDGAF.jpg"> IDGAF : DUA LIPA</li>
+
+				<li id="englishsonginfo10" class="songinfo"> <img src="trendingbg/godsplan.jpg"> IN MY FEELINGS : DRAKE </li>
+
+				<li id="englishsonginfo11" class="songinfo"> <img src="trendingbg/2002.jpg"> 2002 : ANNE-MARIE </li>
+
+				<li id="englishsonginfo12" class="songinfo"> <img src="trendingbg/NOTEARSLEFTTOCRY.jpg"> NO TEARS LEFT TO CRY : ARIANA GRANDE</li>
+
+				<li id="englishsonginfo13" class="songinfo"><img src="trendingbg/FRIENDS.jpg"> FRIENDS : MARSHMELLO ANNE-MARIE </li>
+
+				<li id="englishsonginfo14" class="songinfo"> <img src="trendingbg/FREAKYFRIDAY.jpg"> FREAKY FRIDAY : LIL DICKY FT CHRIS BROWN </li>
+
+				<li id="englishsonginfo15" class="songinfo"> <img src="trendingbg/FEELITSTILL.jpg">FEEL IT STILL : PORTUGAL THE MAN </li>
+
+				<li id="englishsonginfo16" class="songinfo"> <img src="trendingbg/BETTERNOW.jpg"> BETTER NOW : POST MALONE </li>
+
+				<li id="englishsonginfo17" class="songinfo"> <img src="trendingbg/ROCKSTAR.jpg"> ROCKSTAR :	POST MALONE FT 21 SAVAGE </li>
+
+				<li id="englishsonginfo18" class="songinfo"> <img src="trendingbg/EASTSIDE.jpg"> EASTSIDE : BENNY BLANCO HALSEY/KHALID</li>
+
+				<li id="englishsonginfo19" class="songinfo"> <img src="trendingbg/PSYCHO.jpg"> PSYCHO : POST MALONE FT TY DOLLA SIGN </li>
+
+				<li id="englishsonginfo20" class="songinfo">  <img src="trendingbg/HAVANA.jpg">HAVANA : CAMILA CABELLO FT YOUNG THUG </li>
+			</ul>
+		</div>
+		<!--2nd trending section-->
+		<div class="trendingsong">
+			<h3 class="heading1">HINDI TOP 20 2019</h3>
+			<ul class="trendinglist">
+				<li id="hindisonginfo1" class="songinfo"> <img src="trendingbg/cocacola.jpg"> Coca Cola : Luka Chuppi </a></li>
+
+				<li id="hindisonginfo5" class="songinfo"><img src="trendingbg/ApnaTimeAayega.jpg">Apna Time Aayega <br>Gully Boy </a></li>
+
+				<li id="hindisonginfo6" class="songinfo"><img src="trendingbg/FirstClass.jpg">First Class <br>Kalank </a></li>
+
+				<li id="hindisonginfo7" class="songinfo"><img src="trendingbg/PaisaYehPaisa.jpg">Paisa Yeh Paisa <br>Total Dhamaal </a></li>
+
+				<li id="hindisonginfo8" class="songinfo"><img src="trendingbg/SanuKehndi.jpg">Sanu Kehndi <br>Kesari </a></li>
+
+				<li id="hindisonginfo9" class="songinfo"><img src="trendingbg/EkLadkiKoDekhaTohAisaLaga.jpg">Ek Ladki Ko Dekha Toh Aisa Laga</a></li>
+
+				<li id="hindisonginfo10" class="songinfo"><img src="trendingbg/AankhMarey.jpg">Aankh Marey <br>Simmba </a></li>
+
+				<li id="hindisonginfo11" class="songinfo"><img src="trendingbg/KyunRabba.jpg">Kyun Rabba <br>Badla </a></li>
+
+				<li id="hindisonginfo12" class="songinfo"><img src="trendingbg/Fakeera.jpg">Fakeera <br>Junglee </a></li>
+
+				<li id="hindisonginfo13" class="songinfo"><img src="trendingbg/MeriGullyMain.jpg">Meri Gully Main <br>Gully Boy </a></li>
+
+				<li id="hindisonginfo14" class="songinfo"><img src="trendingbg/Machayenge.jpg">Machayenge <br>Emiway Bantai Emiway </a></li>
+
+				<li id="hindisonginfo15" class="songinfo"><img src="trendingbg/TereBin.jpg">Tere Bin <br>Simmba </a></li>
+
+				<li id="hindisonginfo16" class="songinfo"><img src="trendingbg/Lejare.jpg">Leja re <br>Dhvani Bhanushali </a></li>
+
+				<li id="hindisonginfo17" class="songinfo"><img src="trendingbg/KyaBaatAy.jpg">Kya Baat Ay <br> Harrdy Sandhu </a></li>
+
+				<li id="hindisonginfo18" class="songinfo"><img src="trendingbg/Makhna.jpg">Makhna <br> Yo Yo Honey Singh </a></li>
+
+				<li id="hindisonginfo19" class="songinfo"><img src="trendingbg/NikleCurrent.jpg">Nikle Current <br>Jassi Gill and Neha Kakkar </a></li>
+
+				<li id="hindisonginfo20" class="songinfo"><img src="trendingbg/SheMoveItLike.jpg">She Move It Like <br>Badshaah </a></li>
+
+				<li id="hindisonginfo2" class="songinfo"><img src="">Mungda Total Dhamaal </a></li>
+
+				<li id="hindisonginfo3" class="songinfo"><img src="">Poster Lagwa Do <br>Luka Chuppi </a></li>
+
+				<li id="hindisonginfo4" class="songinfo"><img src="">Ghar More Pardesiya <br>Kalank </a></li>
+
+			</ul>
+		</div>
+	</div>
+	<!-------Trending Ends Here-------->
+</div>
+	<!-------Footer Starts Here-------->
+	<div class="footer">
+	<div class="wrapper" id="main-footer">
+		<footer class="d-flex-r">
+			<div class="mx-2">
+				<h6 class="heading font-x1 my-1">Contact me</h6>
+				<ul class="nonspace">
+					<li>
+						<i class="fa fa-map-marker"></i>
+						<address> Arya college of Engineering & I.T &amp; 302028 , Kukas </address>
+					</li>
+					<li>
+						<i class="fa fa-phone"></i> +91 7009431967
+					</li>
+					<li>
+						<i class="fas fa-envelope"></i> info@musicstore.com
+					</li>
+					<li>
+						<a class="text-white" href="#" target="_blank"><i class="fab fa-youtube"></i>  Music Store</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mx-2">
+				<h6 class="heading my-1 font-x1">Company</h6>
+				<ul class="nonspace">
+				<li><a href="#"> Policy </a></li>
+				<li><a href="#"> Privacy </a></li>
+				<li><a href="#"> Investors  </a></li>
+				<li><a href="#"> About Company </a></li>
+				</ul>
+			</div>
+			<div class="mx-2">
+				<h6 class="heading my-1 font-x1">About</h6>
+				<ul class="nonspace">
+				<li><a href="#"> Company Profile</a></li>
+				<li><a href="#"> Support </a></li>
+				<li><a href="#"> About </a></li>
+				<li><a href="#"> Blog </a></li>
+				</ul>
+			</div>
+			<div class="mx-2">
+				<h6 class="heading my-1 font-x1">Subscribe</h6>
+				<form method="post" action="#" class="formsub">
+					<fieldset>
+						<input class="contact-form-text" type="text" class="my-1" placeholder="Name" name="">
+						<input class="contact-form-text" type="text" class="my-1" name="" placeholder="Email">
+						<button class="btn3" >Submit</button>
+					</fieldset>
+				</form>
+			</div>
+		</footer>     
+		<div class="d-flex-r content-space" id="copyright">
+			<p class="d-flex-r"> Copyright &copy; 2021-All Rights Reserved </p>
+		</div>	
+	</div>
+	</div>
+	<!-------Footer Ends Here-------->
+
+</body>
+
+<script type="text/javascript">
+	var index = 0;
+	showImage(1);
+	function plusIndex(n){
+		index = index + 1;
+		showImage(index);
+	}
+
+	function showImage(n)
+	{	var i;
+		var x = document.getElementsByClassName("slides");
+		if(n > x.length){index = 1};
+		if(n < 1 ){index = x.length};
+		for (i=0;i<x.length;i++) 
+		{
+			x[i].style.display = "none";
+		}
+		x[index-1].style.display = "block";	
+	}
+</script>
+    <script>
+    function play1(){
+       var audio = document.getElementById("audio1");
+       audio.play();
+	   var audio = document.getElementById("audio11");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play2(){
+       var audio = document.getElementById("audio1");
+       audio.pause();
+       var audio = document.getElementById("audio2");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio11");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play3(){
+       var audio = document.getElementById("audio2");
+       audio.pause();
+       var audio = document.getElementById("audio3");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio11");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+     function play4(){
+       var audio = document.getElementById("audio3");
+       audio.pause();
+       var audio = document.getElementById("audio4");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play5(){
+     
+       var audio = document.getElementById("audio5");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play6(){
+ 
+       var audio = document.getElementById("audio6");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play7(){
+
+       var audio = document.getElementById("audio7");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play8(){
+       var audio = document.getElementById("audio7");
+       audio.pause();
+       var audio = document.getElementById("audio8");
+       audio.play();
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play9(){
+       var audio = document.getElementById("audio9");
+       audio.play();       
+	   var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+        }
+
+    function play10(){
+		var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio11");
+       audio.pause();
+       var audio = document.getElementById("audio9");
+       audio.pause();
+       var audio = document.getElementById("audio10");
+       audio.play();
+        }
+
+    function play11(){
+       var audio = document.getElementById("audio1");
+       audio.pause();       
+	   var audio = document.getElementById("audio2");
+       audio.pause();       
+	   var audio = document.getElementById("audio3");
+       audio.pause();       
+	   var audio = document.getElementById("audio4");
+       audio.pause();
+	   var audio = document.getElementById("audio5");
+       audio.pause();
+	   var audio = document.getElementById("audio6");
+       audio.pause();
+	   var audio = document.getElementById("audio7");
+       audio.pause();
+	   var audio = document.getElementById("audio8");
+       audio.pause();
+	   var audio = document.getElementById("audio9");
+       audio.pause();
+	   var audio = document.getElementById("audio10");
+       audio.pause();
+       var audio = document.getElementById("audio11");
+       audio.play();
+        }
+      
+   </script>
+
+</body>
+</html>
